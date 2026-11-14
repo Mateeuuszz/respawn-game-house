@@ -9,6 +9,7 @@
       - assunto pré-selecionado pela URL (ex.: contato.html?assunto=torneio)
       - data mínima = hoje
       - contador de caracteres da mensagem
+      - marca o campo como "visitado" para o CSS mostrar erro/acerto
       - confirmação de envio (o site é estático e não envia dados de verdade)
    ========================================================================== */
 
@@ -93,6 +94,18 @@ if (formulario) {
   mensagem.addEventListener("input", atualizarCaracteres);
   atualizarCaracteres();
 
+  // Marca campos visitados (o CSS pinta de vermelho só depois da interação)
+  const campos = formulario.querySelectorAll("input, select, textarea");
+  campos.forEach(function (campo) {
+    campo.addEventListener("blur", function () {
+      campo.classList.add("visitado");
+    });
+    // "invalid" dispara quando a pessoa tenta enviar com o campo errado
+    campo.addEventListener("invalid", function () {
+      campo.classList.add("visitado");
+    });
+  });
+
   // O evento submit só acontece se TODAS as validações nativas do HTML5 passarem.
   formulario.addEventListener("submit", function (evento) {
     evento.preventDefault();
@@ -101,6 +114,9 @@ if (formulario) {
     confirmacao.hidden = false;
     confirmacao.focus();
     formulario.reset();
+    campos.forEach(function (campo) {
+      campo.classList.remove("visitado");
+    });
     atualizarCaracteres();
   });
 }

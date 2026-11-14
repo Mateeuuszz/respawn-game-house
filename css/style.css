@@ -84,7 +84,6 @@
   --fonte-titulo: "Chakra Petch", "Trebuchet MS", sans-serif;
   --fonte-texto: "Rubik", "Segoe UI", Arial, sans-serif;
 
-  --chanfro: 14px;
   --largura: 1180px;
   --espaco: clamp(1rem, 3vw, 2rem);
 }
@@ -147,8 +146,6 @@ p {
 
 a {
   color: var(--tinta-clara);
-  text-decoration-thickness: 2px;
-  text-underline-offset: 3px;
 }
 
 a:hover {
@@ -160,6 +157,10 @@ video,
 iframe {
   max-width: 100%;
   display: block;
+}
+
+img {
+  height: auto;
 }
 
 strong {
@@ -315,7 +316,8 @@ main {
   color: var(--branco);
 }
 
-.secao-escura a {
+/* Só links de texto: os botões mantêm as próprias cores */
+.secao-escura a:not([class]) {
   color: var(--ficha);
 }
 
@@ -335,7 +337,7 @@ main {
   padding: clamp(2rem, 5vw, 3.5rem) 0 clamp(1.5rem, 4vw, 2.5rem);
 }
 
-.cabecalho-pagina p {
+.cabecalho-pagina p:not(.etiqueta) {
   font-size: 1.15rem;
   color: var(--texto-suave);
   margin-bottom: 0;
@@ -437,7 +439,7 @@ main {
   background-color: var(--branco);
   padding: 1.5rem;
   border-top: 4px solid var(--tinta);
-  clip-path: polygon(0 0, calc(100% - var(--chanfro)) 0, 100% var(--chanfro), 100% 100%, 0 100%);
+  clip-path: polygon(0 0, calc(100% - 14px) 0, 100% 14px, 100% 100%, 0 100%);
 }
 
 .card h3 {
@@ -462,7 +464,6 @@ main {
 .card-imagem img {
   width: 100%;
   height: auto;
-  aspect-ratio: 3 / 2;
   object-fit: cover;
 }
 
@@ -686,7 +687,8 @@ main {
   display: inline-block;
   width: 0.9rem;
   height: 0.9rem;
-  border: 2px solid transparent;
+  border-width: 2px;
+  border-style: solid;
 }
 
 .painel .observacao {
@@ -763,7 +765,6 @@ figure {
 .galeria img {
   width: 100%;
   height: auto;
-  aspect-ratio: 3 / 2;
   object-fit: cover;
 }
 
@@ -788,7 +789,6 @@ figcaption strong {
 .video-moldura video {
   width: 100%;
   height: auto;
-  aspect-ratio: 16 / 9;
   background-color: #000;
 }
 
@@ -879,16 +879,14 @@ textarea:focus {
   box-shadow: 0 0 0 3px var(--ficha);
 }
 
-/* :user-invalid só marca o erro depois que a pessoa interagiu com o campo */
-input:user-invalid,
-select:user-invalid,
-textarea:user-invalid {
+/* A classe "visitado" é colocada pelo script.js quando a pessoa sai do campo
+   ou tenta enviar. Assim o erro só aparece depois da interação. */
+.visitado:invalid {
   border-color: var(--placar);
   background-color: #FFF5F6;
 }
 
-input:user-valid,
-textarea:user-valid {
+.visitado:valid {
   border-color: #2E8B57;
 }
 
@@ -1097,7 +1095,6 @@ textarea:user-valid {
 .noticia img {
   width: 100%;
   height: auto;
-  aspect-ratio: 3 / 2;
   object-fit: cover;
 }
 
