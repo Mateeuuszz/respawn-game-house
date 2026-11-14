@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Configuração dos PCs, consoles e óculos de realidade virtual da Respawn e o catálogo de jogos instalados.">
+    <title>Jogos e máquinas | Respawn Game House</title>
+    <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <a class="pular-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="topo">
+        <div class="topo-conteudo">
+            <a class="marca" href="index.html">
+                <img src="img/logo.svg" alt="" width="44" height="44">
+                <span class="marca-nome">RESPAWN <small>game house no Tatuapé</small></span>
+            </a>
+            <button class="botao-menu" type="button" aria-expanded="false" aria-controls="menu-principal">Menu</button>
+            <nav class="menu" id="menu-principal" aria-label="Menu principal">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="jogos.html" aria-current="page">Jogos</a></li>
+                    <li><a href="planos.html">Planos</a></li>
+                    <li><a href="torneios.html">Torneios</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="noticias.html">Notícias</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="conteudo">
+        <section class="cabecalho-pagina" aria-labelledby="titulo-pagina">
+            <div class="conteiner">
+                <h1 id="titulo-pagina">Jogos e máquinas</h1>
+                <p>O que tem instalado e com que máquina você vai jogar.</p>
+            </div>
+        </section>
+
+        <section class="secao" aria-labelledby="titulo-config">
+            <div class="conteiner">
+                <h2 id="titulo-config">Configuração</h2>
+                <div class="tabela-rolagem">
+                    <table>
+                        <caption>Equipamentos por tipo de estação</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Estação</th>
+                                <th scope="col">Quantidade</th>
+                                <th scope="col">Equipamento</th>
+                                <th scope="col">Tela</th>
+                                <th scope="col">Acessórios</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">PC</th>
+                                <td>20</td>
+                                <td>Ryzen 7, RTX 4070 Super, 32 GB de RAM, SSD de 1 TB</td>
+                                <td>27 polegadas, 165 Hz</td>
+                                <td>Teclado mecânico, mouse 26 mil DPI, headset com microfone</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Console</th>
+                                <td>4 salas</td>
+                                <td>PlayStation 5, Xbox Series X e Nintendo Switch 2</td>
+                                <td>TV 4K de 75 polegadas</td>
+                                <td>4 controles por sala</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Realidade virtual</th>
+                                <td>2 áreas</td>
+                                <td>Meta Quest 3 ligado a um PC dedicado</td>
+                                <td>Tela espelhada para quem está assistindo</td>
+                                <td>Capa higiênica descartável</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="observacao">Internet de fibra de 1 Gbps com link reserva. Ping médio de 6 ms para os servidores de São Paulo.</p>
+            </div>
+        </section>
+
+        <section class="secao secao-branca" id="catalogo" aria-labelledby="titulo-catalogo">
+            <div class="conteiner">
+                <h2 id="titulo-catalogo">Catálogo</h2>
+                <div class="grade grade-3">
+                    <article class="card card-pc">
+                        <h3>No PC</h3>
+                        <ul class="lista-check">
+                            <li>League of Legends</li>
+                            <li>Valorant</li>
+                            <li>Counter-Strike 2</li>
+                            <li>Marvel Rivals</li>
+                            <li>Fortnite</li>
+                            <li>Rocket League</li>
+                            <li>Minecraft</li>
+                            <li>Roblox</li>
+                            <li>Genshin Impact</li>
+                        </ul>
+                    </article>
+                    <article class="card card-console">
+                        <h3>Nos consoles</h3>
+                        <ul class="lista-check">
+                            <li>EA Sports FC 26</li>
+                            <li>Street Fighter 6</li>
+                            <li>Tekken 8</li>
+                            <li>Mortal Kombat 1</li>
+                            <li>Mario Kart World</li>
+                            <li>Super Smash Bros. Ultimate</li>
+                            <li>Gran Turismo 7</li>
+                        </ul>
+                    </article>
+                    <article class="card card-vr">
+                        <h3>Na realidade virtual</h3>
+                        <ul class="lista-check">
+                            <li>Beat Saber</li>
+                            <li>Superhot VR</li>
+                            <li>Walkabout Mini Golf</li>
+                            <li>Job Simulator</li>
+                        </ul>
+                        <p class="observacao">Sessões de VR a partir de 10 anos.</p>
+                    </article>
+                </div>
+                <div class="aviso">
+                    <p>Os jogos online usam a sua própria conta. Lembre de sair da conta antes de liberar a estação.</p>
+                </div>
+                <p>Não achou o seu jogo? <a href="contato.html?assunto=outro">Peça pelo formulário de contato</a>: a gente avalia todo pedido no começo do mês.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="conteiner">
+            <div class="rodape-grade">
+                <section aria-labelledby="rodape-respawn">
+                    <h2 id="rodape-respawn">Respawn Game House</h2>
+                    <p>Game center com PCs, consoles, realidade virtual e torneios na zona leste de São Paulo.</p>
+                    <address>
+                        Rua dos Jogadores, 404 – Tatuapé<br>
+                        São Paulo – SP (endereço fictício)<br>
+                        <a href="mailto:contato@respawngamehouse.com.br">contato@respawngamehouse.com.br</a>
+                    </address>
+                </section>
+                <nav aria-labelledby="rodape-paginas">
+                    <h2 id="rodape-paginas">Mais páginas</h2>
+                    <ul>
+                        <li><a href="faq.html">Perguntas frequentes</a></li>
+                        <li><a href="torneio-copa-leste.html">Copa Leste 5x5</a></li>
+                        <li><a href="orcamento.html">Orçamento do site (domínio e hospedagem)</a></li>
+                        <li><a href="contato.html">Contato e reservas</a></li>
+                    </ul>
+                </nav>
+                <section aria-labelledby="rodape-horario">
+                    <h2 id="rodape-horario">Horário</h2>
+                    <ul>
+                        <li>Segunda a quinta: 12h às 23h</li>
+                        <li>Sexta e sábado: 10h às 2h</li>
+                        <li>Domingo: 10h às 22h</li>
+                    </ul>
+                </section>
+            </div>
+            <div class="rodape-base">
+                <p>Projeto acadêmico de Desenvolvimento Front-End para Web (UNICID, 2026), feito por Mateus Izac Batista. A Respawn Game House é uma empresa fictícia.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
