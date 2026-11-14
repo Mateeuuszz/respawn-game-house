@@ -28,8 +28,6 @@ Fontes: Chakra Petch e Rubik, com licença livre (SIL Open Font License), salvas
 
 As ilustrações, a vinheta e o vídeo foram criados para este projeto. O mapa é do Google Maps.
 
-Projeto desenvolvido com apoio de IA (Claude, da Anthropic) no código, nas mídias e na documentação.
-
 ## Páginas (11)
 
 | Arquivo | Conteúdo |
