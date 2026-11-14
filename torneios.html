@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calendário de torneios da Respawn Game House, resultados recentes e como inscrever o seu time.">
+    <title>Torneios | Respawn Game House</title>
+    <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <a class="pular-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="topo">
+        <div class="topo-conteudo">
+            <a class="marca" href="index.html">
+                <img src="img/logo.svg" alt="" width="44" height="44">
+                <span class="marca-nome">RESPAWN <small>game house no Tatuapé</small></span>
+            </a>
+            <button class="botao-menu" type="button" aria-expanded="false" aria-controls="menu-principal">Menu</button>
+            <nav class="menu" id="menu-principal" aria-label="Menu principal">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="jogos.html">Jogos</a></li>
+                    <li><a href="planos.html">Planos</a></li>
+                    <li><a href="torneios.html" aria-current="page">Torneios</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="noticias.html">Notícias</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="conteudo">
+        <section class="cabecalho-pagina" aria-labelledby="titulo-pagina">
+            <div class="conteiner">
+                <h1 id="titulo-pagina">Torneios</h1>
+                <p>Pelo menos um torneio por semana, do casual ao competitivo.</p>
+            </div>
+        </section>
+
+        <section class="secao" aria-labelledby="titulo-calendario">
+            <div class="conteiner">
+                <h2 id="titulo-calendario">Próximos torneios</h2>
+                <div class="grade grade-2">
+                    <article class="card card-pc">
+                        <p class="etiqueta">Inscrições abertas</p>
+                        <h3>Copa Leste 5x5 de League of Legends</h3>
+                        <p><time datetime="2026-12-05T13:00">Sábado, 5 de dezembro, às 13h</time>. 8 times, R$ 1.500 em prêmios.</p>
+                        <a href="torneio-copa-leste.html">Ver regulamento e chaveamento</a>
+                    </article>
+                    <article class="card card-pc">
+                        <p class="etiqueta">Inscrições abertas</p>
+                        <h3>Desafio 6v6 de Marvel Rivals</h3>
+                        <p><time datetime="2026-12-12T14:00">Sábado, 12 de dezembro, às 14h</time>. 8 times, R$ 900 em prêmios.</p>
+                        <a href="contato.html?assunto=torneio">Inscrever meu time</a>
+                    </article>
+                    <article class="card card-console">
+                        <p class="etiqueta">Toda sexta</p>
+                        <h3>Sexta da Luta</h3>
+                        <p>Street Fighter 6 e Tekken 8, a partir das 20h. Inscrição de R$ 15 e prêmio em horas de jogo.</p>
+                        <a href="contato.html?assunto=torneio">Garantir minha vaga</a>
+                    </article>
+                    <article class="card card-console">
+                        <p class="etiqueta">Todo domingo</p>
+                        <h3>Mario Kart em família</h3>
+                        <p>Duplas de um adulto e uma criança, às 15h. R$ 10 por dupla e medalha pra todo mundo.</p>
+                        <a href="contato.html?assunto=torneio">Inscrever nossa dupla</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao secao-branca" aria-labelledby="titulo-resultados">
+            <div class="conteiner">
+                <h2 id="titulo-resultados">Resultados recentes</h2>
+                <div class="tabela-rolagem">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col">Torneio</th>
+                                <th scope="col">Data</th>
+                                <th scope="col">Campeão</th>
+                                <th scope="col">Vice</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><th scope="row">Sexta da Luta #38</th><td><time datetime="2026-11-06">06/11/2026</time></td><td>Hadouken do Carrão</td><td>Mãe do Kazuya</td></tr>
+                            <tr><th scope="row">Copa de Outubro (LoL)</th><td><time datetime="2026-10-24">24/10/2026</time></td><td>Leste Dragons</td><td>Penha Esports</td></tr>
+                            <tr><th scope="row">Desafio Marvel Rivals #2</th><td><time datetime="2026-09-19">19/09/2026</time></td><td>Vila Formosa Vanguard</td><td>Os Sem Ult</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao" aria-labelledby="titulo-inscricao">
+            <div class="conteiner">
+                <h2 id="titulo-inscricao">Como se inscrever</h2>
+                <ol class="passos">
+                    <li>Escolha o torneio no calendário acima.</li>
+                    <li>Envie o <a href="contato.html?assunto=torneio">formulário de contato</a> com o assunto "Inscrição em torneio" e o nome do time.</li>
+                    <li>Pague a inscrição no balcão ou por Pix em até 48 horas.</li>
+                    <li>Chegue 30 minutos antes para o check-in.</li>
+                </ol>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="conteiner">
+            <div class="rodape-grade">
+                <section aria-labelledby="rodape-respawn">
+                    <h2 id="rodape-respawn">Respawn Game House</h2>
+                    <p>Game center com PCs, consoles, realidade virtual e torneios na zona leste de São Paulo.</p>
+                    <address>
+                        Rua dos Jogadores, 404 – Tatuapé<br>
+                        São Paulo – SP (endereço fictício)<br>
+                        <a href="mailto:contato@respawngamehouse.com.br">contato@respawngamehouse.com.br</a>
+                    </address>
+                </section>
+                <nav aria-labelledby="rodape-paginas">
+                    <h2 id="rodape-paginas">Mais páginas</h2>
+                    <ul>
+                        <li><a href="faq.html">Perguntas frequentes</a></li>
+                        <li><a href="torneio-copa-leste.html">Copa Leste 5x5</a></li>
+                        <li><a href="orcamento.html">Orçamento do site (domínio e hospedagem)</a></li>
+                        <li><a href="contato.html">Contato e reservas</a></li>
+                    </ul>
+                </nav>
+                <section aria-labelledby="rodape-horario">
+                    <h2 id="rodape-horario">Horário</h2>
+                    <ul>
+                        <li>Segunda a quinta: 12h às 23h</li>
+                        <li>Sexta e sábado: 10h às 2h</li>
+                        <li>Domingo: 10h às 22h</li>
+                    </ul>
+                </section>
+            </div>
+            <div class="rodape-base">
+                <p>Projeto acadêmico de Desenvolvimento Front-End para Web (UNICID, 2026), feito por Mateus Izac Batista. A Respawn Game House é uma empresa fictícia.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
