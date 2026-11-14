@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Game center no Tatuapé com PCs de alto desempenho, consoles, realidade virtual e torneios toda semana.">
+    <title>Respawn Game House | Game center no Tatuapé</title>
+    <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <a class="pular-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="topo">
+        <div class="topo-conteudo">
+            <a class="marca" href="index.html">
+                <img src="img/logo.svg" alt="" width="44" height="44">
+                <span class="marca-nome">RESPAWN <small>game house no Tatuapé</small></span>
+            </a>
+            <button class="botao-menu" type="button" aria-expanded="false" aria-controls="menu-principal">Menu</button>
+            <nav class="menu" id="menu-principal" aria-label="Menu principal">
+                <ul>
+                    <li><a href="index.html" aria-current="page">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="jogos.html">Jogos</a></li>
+                    <li><a href="planos.html">Planos</a></li>
+                    <li><a href="torneios.html">Torneios</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="noticias.html">Notícias</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="conteudo">
+        <section class="inicio-hero" aria-labelledby="titulo-inicio">
+            <div class="conteiner dividido">
+                <div>
+                    <h1 id="titulo-inicio">Chegou, sentou, jogou.</h1>
+                    <p class="texto-grande">PCs de alto desempenho, consoles, realidade virtual e torneio toda semana, a 5 minutos a pé do metrô Tatuapé.</p>
+                    <div class="acoes">
+                        <a class="botao" href="contato.html?assunto=reserva">Reservar uma estação</a>
+                        <a class="botao-secundario" href="planos.html">Ver planos e preços</a>
+                    </div>
+                </div>
+
+                <section class="painel" data-painel aria-labelledby="titulo-painel">
+                    <div class="painel-topo">
+                        <h2 id="titulo-painel">Estações agora</h2>
+                        <p class="painel-resumo"><strong data-livres>9</strong> de 20 PCs livres</p>
+                    </div>
+                    <div class="painel-grupo">
+                        <h3>Salão PC</h3>
+                        <ul class="estacoes">
+                                <li class="estacao estacao-livre" data-tipo="pc">01<span class="visualmente-oculto"> livre</span></li>
+                                <li class="estacao estacao-ocupada" data-tipo="pc">02<span class="visualmente-oculto"> ocupada</span></li>
+                                <li class="estacao estacao-livre" data-tipo="pc">03<span class="visualmente-oculto"> livre</span></li>
+                                <li class="estacao estacao-livre" data-tipo="pc">04<span class="visualmente-oculto"> livre</span></li>
+                                <li class="estacao estacao-ocupada" data-tipo="pc">05<span class="visualmente-oculto"> ocupada</span></li>
+                                <li class="estacao estacao-reservada" data-tipo="pc">06<span class="visualmente-oculto"> reservada</span></li>
+                                <li class="estacao estacao-ocupada" data-tipo="pc">07<span class="visualmente-oculto"> ocupada</span></li>
+                                <li class="estacao estacao-livre" data-tipo="pc">08<span class="visualmente-oculto"> livre</span></li>
+                                <li class="estacao estacao-livre" data-tipo="pc">09<span class="visualmente-oculto"> livre</span></li>
+                                <li class="estacao estacao-ocupada" data-tipo="pc">10<span class="visualmente-oculto"> ocupada</span></li>
+                                <li class="estacao estacao-livre" data-tipo="pc">11<span class="visualmente-oculto"> livre</span></li>
+                                <li class="estacao estacao-ocupada" data-tipo="pc">12<span class="visualmente-oculto"> ocupada</span></li>
+                                <li class="estacao estacao-ocupada" data-tipo="pc">13<span class="visualmente-oculto"> ocupada</span></li>
+                                <li class="estacao estacao-livre" data-tipo="pc">14<span class="visualmente-oculto"> livre</span></li>
+                                <li class="estacao estacao-reservada" data-tipo="pc">15<span class="visualmente-oculto"> reservada</span></li>
+                                <li class="estacao estacao-ocupada" data-tipo="pc">16<span class="visualmente-oculto"> ocupada</span></li>
+                                <li class="estacao estacao-livre" data-tipo="pc">17<span class="visualmente-oculto"> livre</span></li>
+                                <li class="estacao estacao-livre" data-tipo="pc">18<span class="visualmente-oculto"> livre</span></li>
+                                <li class="estacao estacao-ocupada" data-tipo="pc">19<span class="visualmente-oculto"> ocupada</span></li>
+                                <li class="estacao estacao-reservada" data-tipo="pc">20<span class="visualmente-oculto"> reservada</span></li>
+                        </ul>
+                    </div>
+                    <div class="painel-grupo">
+                        <h3>Consoles e realidade virtual</h3>
+                        <ul class="estacoes">
+                            <li class="estacao estacao-ocupada">C1<span class="visualmente-oculto"> console ocupado</span></li>
+                            <li class="estacao estacao-livre">C2<span class="visualmente-oculto"> console livre</span></li>
+                            <li class="estacao estacao-livre">C3<span class="visualmente-oculto"> console livre</span></li>
+                            <li class="estacao estacao-reservada">C4<span class="visualmente-oculto"> console reservado</span></li>
+                            <li class="estacao estacao-ocupada">VR1<span class="visualmente-oculto"> VR ocupado</span></li>
+                            <li class="estacao estacao-livre">VR2<span class="visualmente-oculto"> VR livre</span></li>
+                        </ul>
+                    </div>
+                    <ul class="legenda">
+                        <li><span class="estacao-livre"></span>Livre</li>
+                        <li><span class="estacao-ocupada"></span>Ocupada</li>
+                        <li><span class="estacao-reservada"></span>Reservada</li>
+                    </ul>
+                    <p class="observacao">Painel ilustrativo: a ocupação muda sozinha a cada poucos segundos.</p>
+                </section>
+            </div>
+        </section>
+
+        <section class="secao" aria-labelledby="titulo-espacos">
+            <div class="conteiner">
+                <h2 id="titulo-espacos">Quatro jeitos de jogar</h2>
+                <div class="grade grade-4">
+                    <article class="card card-imagem card-pc">
+                        <img src="img/galeria/salao-pc-p.jpg" alt="Fileira de computadores com monitores acesos e cadeiras gamer vermelhas e amarelas" width="600" height="400" loading="lazy">
+                        <div class="card-corpo">
+                            <h3>Salão PC</h3>
+                            <p>20 máquinas com placa RTX, monitor de 165 Hz e headset com microfone.</p>
+                            <a href="jogos.html">Ver jogos e configuração</a>
+                        </div>
+                    </article>
+                    <article class="card card-imagem card-console">
+                        <img src="img/galeria/area-console-p.jpg" alt="Sofá vermelho de frente para uma TV grande com um jogo de plataforma na tela" width="600" height="400" loading="lazy">
+                        <div class="card-corpo">
+                            <h3>Consoles</h3>
+                            <p>Quatro salinhas com sofá, TV de 75 polegadas e controles extras pra jogar em grupo.</p>
+                            <a href="jogos.html#catalogo">Ver catálogo</a>
+                        </div>
+                    </article>
+                    <article class="card card-imagem card-vr">
+                        <img src="img/galeria/espaco-vr-p.jpg" alt="Pessoa com óculos de realidade virtual e controles nas mãos dentro de uma área demarcada" width="600" height="400" loading="lazy">
+                        <div class="card-corpo">
+                            <h3>Realidade virtual</h3>
+                            <p>Duas áreas de 3 por 3 metros com monitor acompanhando cada sessão.</p>
+                            <a href="planos.html">Ver preços do VR</a>
+                        </div>
+                    </article>
+                    <article class="card card-imagem">
+                        <img src="img/galeria/lanchonete-p.jpg" alt="Balcão da lanchonete com cardápio na parede e geladeira de bebidas" width="600" height="400" loading="lazy">
+                        <div class="card-corpo">
+                            <h3>Lanchonete Checkpoint</h3>
+                            <p>Lanche, açaí e bebida gelada. Bebida com tampa pode ir pra estação.</p>
+                            <a href="galeria.html">Ver o espaço</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao secao-escura" aria-labelledby="titulo-proximo-torneio">
+            <div class="conteiner dividido">
+                <div>
+                    <p class="etiqueta">Inscrições abertas até 1º de dezembro</p>
+                    <h2 id="titulo-proximo-torneio">Copa Leste 5x5 de League of Legends</h2>
+                    <p>Sábado, <time datetime="2026-12-05T13:00">5 de dezembro, a partir das 13h</time>. Oito times, eliminação simples e R$ 1.500 em prêmios, com a final no palco e transmissão ao vivo.</p>
+                    <div class="acoes">
+                        <a class="botao" href="contato.html?assunto=torneio">Inscrever meu time</a>
+                        <a class="botao-secundario" href="torneio-copa-leste.html">Ler o regulamento</a>
+                    </div>
+                </div>
+                <img src="img/galeria/palco-torneios-p.jpg" alt="Palco de torneios com telão mostrando o chaveamento e plateia em frente" width="600" height="400" loading="lazy">
+            </div>
+        </section>
+
+        <section class="secao" aria-labelledby="titulo-planos">
+            <div class="conteiner">
+                <h2 id="titulo-planos">Quanto custa</h2>
+                <div class="grade grade-3">
+                    <article class="card">
+                        <h3>Hora avulsa</h3>
+                        <p class="destaque-preco">R$ 8 <small>por hora no PC</small></p>
+                        <p>Chega e joga. Console sai a R$ 10 por pessoa.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Pacote 10 horas</h3>
+                        <p class="destaque-preco">R$ 65 <small>válido por 60 dias</small></p>
+                        <p>Use as horas quando quiser, em qualquer PC.</p>
+                    </article>
+                    <article class="card plano-destaque">
+                        <h3>Respawn+</h3>
+                        <p class="destaque-preco">R$ 149 <small>por mês</small></p>
+                        <p>30 horas, 10% de desconto na lanchonete e prioridade nos torneios.</p>
+                    </article>
+                </div>
+                <div class="acoes">
+                    <a class="botao-secundario" href="planos.html">Ver tabela completa</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao secao-branca" aria-labelledby="titulo-primeira-vez">
+            <div class="conteiner dividido">
+                <div>
+                    <h2 id="titulo-primeira-vez">Primeira vez aqui?</h2>
+                    <p>Leva uns 3 minutos pra começar a jogar:</p>
+                    <ol class="passos">
+                        <li>Faça seu cadastro no balcão com um documento com foto.</li>
+                        <li>Escolha a estação livre no painel.</li>
+                        <li>Pague a hora avulsa ou use os créditos do seu pacote.</li>
+                        <li>Entre na sua conta do jogo e boa partida.</li>
+                    </ol>
+                    <p>Menor de 14 anos precisa de autorização assinada por um responsável. <a href="faq.html">Veja outras dúvidas</a>.</p>
+                </div>
+                <img src="img/galeria/fachada-p.jpg" alt="Fachada da Respawn à noite, com letreiro amarelo aceso e vitrines mostrando os computadores" width="600" height="400" loading="lazy">
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="conteiner">
+            <div class="rodape-grade">
+                <section aria-labelledby="rodape-respawn">
+                    <h2 id="rodape-respawn">Respawn Game House</h2>
+                    <p>Game center com PCs, consoles, realidade virtual e torneios na zona leste de São Paulo.</p>
+                    <address>
+                        Rua dos Jogadores, 404 – Tatuapé<br>
+                        São Paulo – SP (endereço fictício)<br>
+                        <a href="mailto:contato@respawngamehouse.com.br">contato@respawngamehouse.com.br</a>
+                    </address>
+                </section>
+                <nav aria-labelledby="rodape-paginas">
+                    <h2 id="rodape-paginas">Mais páginas</h2>
+                    <ul>
+                        <li><a href="faq.html">Perguntas frequentes</a></li>
+                        <li><a href="torneio-copa-leste.html">Copa Leste 5x5</a></li>
+                        <li><a href="orcamento.html">Orçamento do site (domínio e hospedagem)</a></li>
+                        <li><a href="contato.html">Contato e reservas</a></li>
+                    </ul>
+                </nav>
+                <section aria-labelledby="rodape-horario">
+                    <h2 id="rodape-horario">Horário</h2>
+                    <ul>
+                        <li>Segunda a quinta: 12h às 23h</li>
+                        <li>Sexta e sábado: 10h às 2h</li>
+                        <li>Domingo: 10h às 22h</li>
+                    </ul>
+                </section>
+            </div>
+            <div class="rodape-base">
+                <p>Projeto acadêmico de Desenvolvimento Front-End para Web (UNICID, 2026), feito por Mateus Izac Batista. A Respawn Game House é uma empresa fictícia.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
