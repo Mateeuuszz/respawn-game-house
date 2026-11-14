@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="Respawn Game House">
+  <rect width="64" height="64" rx="14" fill="#1A1B4B"/>
+  <path d="M46 22 A17 17 0 1 0 49 37" fill="none" stroke="#FFB703" stroke-width="6" stroke-linecap="round"/>
+  <path d="M38 13 L50 20 L40 29 Z" fill="#FFB703"/>
+  <rect x="26" y="26" width="5" height="5" fill="#E63946"/>
+  <rect x="33" y="26" width="5" height="5" fill="#E63946"/>
+  <rect x="24" y="31" width="16" height="5" fill="#E63946"/>
+  <rect x="26" y="36" width="12" height="4" fill="#E63946"/>
+  <rect x="29" y="40" width="6" height="3" fill="#E63946"/>
+</svg>
