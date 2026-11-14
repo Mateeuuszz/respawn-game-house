@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vídeo tour e fotos do espaço da Respawn Game House: salão PC, consoles, realidade virtual, palco e lanchonete.">
+    <title>Galeria | Respawn Game House</title>
+    <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <a class="pular-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="topo">
+        <div class="topo-conteudo">
+            <a class="marca" href="index.html">
+                <img src="img/logo.svg" alt="" width="44" height="44">
+                <span class="marca-nome">RESPAWN <small>game house no Tatuapé</small></span>
+            </a>
+            <button class="botao-menu" type="button" aria-expanded="false" aria-controls="menu-principal">Menu</button>
+            <nav class="menu" id="menu-principal" aria-label="Menu principal">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="jogos.html">Jogos</a></li>
+                    <li><a href="planos.html">Planos</a></li>
+                    <li><a href="torneios.html">Torneios</a></li>
+                    <li><a href="galeria.html" aria-current="page">Galeria</a></li>
+                    <li><a href="noticias.html">Notícias</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="conteudo">
+        <section class="cabecalho-pagina" aria-labelledby="titulo-pagina">
+            <div class="conteiner">
+                <h1 id="titulo-pagina">Galeria</h1>
+                <p>Conheça o espaço antes de vir.</p>
+            </div>
+        </section>
+
+        <section class="secao" aria-labelledby="titulo-tour">
+            <div class="conteiner dividido">
+                <div class="video-moldura">
+                    <video controls preload="metadata" poster="img/poster-tour.jpg" width="1280" height="720">
+                        <source src="assets/video/tour-respawn.mp4" type="video/mp4">
+                        <track kind="captions" src="assets/video/tour-respawn.vtt" srclang="pt-BR" label="Português" default>
+                        <p>Seu navegador não reproduz vídeo. <a href="assets/video/tour-respawn.mp4">Baixe o tour em MP4</a>.</p>
+                    </video>
+                </div>
+                <div>
+                    <h2 id="titulo-tour">Tour de 20 segundos</h2>
+                    <p>Da porta até a lanchonete: um passeio rápido pelas seis áreas da Respawn, com a vinheta oficial dos torneios ao fundo.</p>
+                    <p>O vídeo tem legendas em português. Ative pelo botão de legendas do player.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao secao-branca" aria-labelledby="titulo-fotos">
+            <div class="conteiner">
+                <h2 id="titulo-fotos">Fotos do espaço</h2>
+                <div class="galeria">
+                    <figure>
+                        <img src="img/galeria/fachada.jpg" alt="Fachada da Respawn à noite, com letreiro amarelo aceso e vitrines mostrando os computadores" width="1200" height="800" loading="lazy">
+                        <figcaption><strong>Fachada</strong>Entrada pela Rua dos Jogadores, com acesso sem degraus.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/galeria/salao-pc.jpg" alt="Fileira de computadores com monitores acesos e cadeiras gamer vermelhas e amarelas" width="1200" height="800" loading="lazy">
+                        <figcaption><strong>Salão PC</strong>20 estações lado a lado, perfeitas pra jogar com o time.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/galeria/area-console.jpg" alt="Sofá vermelho de frente para uma TV grande com um jogo de plataforma na tela" width="1200" height="800" loading="lazy">
+                        <figcaption><strong>Sala de console</strong>Sofá para quatro pessoas e TV de 75 polegadas.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/galeria/espaco-vr.jpg" alt="Pessoa com óculos de realidade virtual e controles nas mãos dentro de uma área demarcada" width="1200" height="800" loading="lazy">
+                        <figcaption><strong>Espaço VR</strong>Área demarcada de 3 por 3 metros, sempre com um monitor por perto.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/galeria/palco-torneios.jpg" alt="Palco de torneios com telão mostrando o chaveamento e plateia em frente" width="1200" height="800" loading="lazy">
+                        <figcaption><strong>Palco</strong>Onde acontecem as finais, com telão e transmissão.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/galeria/lanchonete.jpg" alt="Balcão da lanchonete com cardápio na parede e geladeira de bebidas" width="1200" height="800" loading="lazy">
+                        <figcaption><strong>Lanchonete Checkpoint</strong>Lanches, açaí e bebidas geladas.</figcaption>
+                    </figure>
+                </div>
+                <p class="observacao">Ilustrações do espaço criadas para este projeto.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="conteiner">
+            <div class="rodape-grade">
+                <section aria-labelledby="rodape-respawn">
+                    <h2 id="rodape-respawn">Respawn Game House</h2>
+                    <p>Game center com PCs, consoles, realidade virtual e torneios na zona leste de São Paulo.</p>
+                    <address>
+                        Rua dos Jogadores, 404 – Tatuapé<br>
+                        São Paulo – SP (endereço fictício)<br>
+                        <a href="mailto:contato@respawngamehouse.com.br">contato@respawngamehouse.com.br</a>
+                    </address>
+                </section>
+                <nav aria-labelledby="rodape-paginas">
+                    <h2 id="rodape-paginas">Mais páginas</h2>
+                    <ul>
+                        <li><a href="faq.html">Perguntas frequentes</a></li>
+                        <li><a href="torneio-copa-leste.html">Copa Leste 5x5</a></li>
+                        <li><a href="orcamento.html">Orçamento do site (domínio e hospedagem)</a></li>
+                        <li><a href="contato.html">Contato e reservas</a></li>
+                    </ul>
+                </nav>
+                <section aria-labelledby="rodape-horario">
+                    <h2 id="rodape-horario">Horário</h2>
+                    <ul>
+                        <li>Segunda a quinta: 12h às 23h</li>
+                        <li>Sexta e sábado: 10h às 2h</li>
+                        <li>Domingo: 10h às 22h</li>
+                    </ul>
+                </section>
+            </div>
+            <div class="rodape-base">
+                <p>Projeto acadêmico de Desenvolvimento Front-End para Web (UNICID, 2026), feito por Mateus Izac Batista. A Respawn Game House é uma empresa fictícia.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

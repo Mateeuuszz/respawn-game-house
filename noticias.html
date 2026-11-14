@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Novidades da Respawn Game House: novas máquinas, resultados de torneios, horários e a vinheta oficial.">
+    <title>Notícias | Respawn Game House</title>
+    <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <a class="pular-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="topo">
+        <div class="topo-conteudo">
+            <a class="marca" href="index.html">
+                <img src="img/logo.svg" alt="" width="44" height="44">
+                <span class="marca-nome">RESPAWN <small>game house no Tatuapé</small></span>
+            </a>
+            <button class="botao-menu" type="button" aria-expanded="false" aria-controls="menu-principal">Menu</button>
+            <nav class="menu" id="menu-principal" aria-label="Menu principal">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="jogos.html">Jogos</a></li>
+                    <li><a href="planos.html">Planos</a></li>
+                    <li><a href="torneios.html">Torneios</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="noticias.html" aria-current="page">Notícias</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="conteudo">
+        <section class="cabecalho-pagina" aria-labelledby="titulo-pagina">
+            <div class="conteiner">
+                <h1 id="titulo-pagina">Notícias</h1>
+                <p>O que mudou por aqui nas últimas semanas.</p>
+            </div>
+        </section>
+
+        <section class="secao" aria-label="Lista de notícias">
+            <div class="conteiner">
+                <article class="noticia">
+                    <img src="img/galeria/salao-pc-p.jpg" alt="Fileira de computadores com monitores acesos" width="600" height="400" loading="lazy">
+                    <div>
+                        <time datetime="2026-11-10">10 de novembro de 2026</time>
+                        <h2>Cinco PCs novos no salão</h2>
+                        <p>O salão PC chegou a 20 estações. As máquinas novas têm a mesma configuração das outras, então não importa em qual você sentar: o desempenho é igual.</p>
+                        <p><a href="jogos.html">Ver a configuração completa</a></p>
+                    </div>
+                </article>
+
+                <article class="noticia noticia-sem-imagem">
+                    <div>
+                        <time datetime="2026-11-03">3 de novembro de 2026</time>
+                        <h2>Ouça a vinheta nova dos torneios</h2>
+                        <p>A partir da Copa Leste, toda partida no palco vai começar com a vinheta nova da casa, composta em estilo chiptune, aquele som de videogame antigo.</p>
+                        <div class="player-audio">
+                            <p><strong>Vinheta oficial da Respawn</strong> (30 segundos)</p>
+                            <audio controls preload="none">
+                                <source src="assets/audio/vinheta-respawn.mp3" type="audio/mpeg">
+                                <source src="assets/audio/vinheta-respawn.ogg" type="audio/ogg">
+                                <a href="assets/audio/vinheta-respawn.mp3">Baixar a vinheta em MP3</a>
+                            </audio>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="noticia">
+                    <img src="img/galeria/palco-torneios-p.jpg" alt="Palco de torneios com telão mostrando o chaveamento" width="600" height="400" loading="lazy">
+                    <div>
+                        <time datetime="2026-10-25">25 de outubro de 2026</time>
+                        <h2>Leste Dragons vence a Copa de Outubro</h2>
+                        <p>Numa final de três partidas, o Leste Dragons virou contra o Penha Esports e levou o troféu. A próxima edição, a Copa Leste 5x5, já está com inscrições abertas.</p>
+                        <p><a href="torneio-copa-leste.html">Conhecer a Copa Leste</a></p>
+                    </div>
+                </article>
+
+                <article class="noticia">
+                    <img src="img/galeria/fachada-p.jpg" alt="Fachada da Respawn à noite com o letreiro aceso" width="600" height="400" loading="lazy">
+                    <div>
+                        <time datetime="2026-10-12">12 de outubro de 2026</time>
+                        <h2>Domingo agora abre às 10h</h2>
+                        <p>Atendendo aos pedidos das famílias do Mario Kart em família, os domingos e feriados passam a abrir às 10h e fechar às 22h.</p>
+                        <p><a href="planos.html">Ver todos os horários</a></p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="conteiner">
+            <div class="rodape-grade">
+                <section aria-labelledby="rodape-respawn">
+                    <h2 id="rodape-respawn">Respawn Game House</h2>
+                    <p>Game center com PCs, consoles, realidade virtual e torneios na zona leste de São Paulo.</p>
+                    <address>
+                        Rua dos Jogadores, 404 – Tatuapé<br>
+                        São Paulo – SP (endereço fictício)<br>
+                        <a href="mailto:contato@respawngamehouse.com.br">contato@respawngamehouse.com.br</a>
+                    </address>
+                </section>
+                <nav aria-labelledby="rodape-paginas">
+                    <h2 id="rodape-paginas">Mais páginas</h2>
+                    <ul>
+                        <li><a href="faq.html">Perguntas frequentes</a></li>
+                        <li><a href="torneio-copa-leste.html">Copa Leste 5x5</a></li>
+                        <li><a href="orcamento.html">Orçamento do site (domínio e hospedagem)</a></li>
+                        <li><a href="contato.html">Contato e reservas</a></li>
+                    </ul>
+                </nav>
+                <section aria-labelledby="rodape-horario">
+                    <h2 id="rodape-horario">Horário</h2>
+                    <ul>
+                        <li>Segunda a quinta: 12h às 23h</li>
+                        <li>Sexta e sábado: 10h às 2h</li>
+                        <li>Domingo: 10h às 22h</li>
+                    </ul>
+                </section>
+            </div>
+            <div class="rodape-base">
+                <p>Projeto acadêmico de Desenvolvimento Front-End para Web (UNICID, 2026), feito por Mateus Izac Batista. A Respawn Game House é uma empresa fictícia.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
